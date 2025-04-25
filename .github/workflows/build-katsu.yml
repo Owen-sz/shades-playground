@@ -299,8 +299,9 @@ jobs:
           mv katsu-work/chroot.tar katsu-work/${{ env.artifact }}.tar
           # compress tar as zst, output as .tar.zst
           # have an exception for WSL, as it doesn't support zstd
-          if [ "${{ matrix.variant }}" = "ports/wsl/wsl" ]; then
-            gzip -9 -c katsu-work/${{ env.artifact }}.tar > katsu-work/${{ env.artifact }}.tar.gz
+          if [ "${{ matrix.variant }}" = "wsl/wsl" ]; then
+            # A .wsl file is essentially a .tar.gz file, but Windows associates it with WSL, so you can install it directly
+            gzip -9 -c katsu-work/${{ env.artifact }}.tar > katsu-work/${{ env.artifact }}.wsl
           else
             zstd -T0 -19 katsu-work/${{ env.artifact }}.tar -o katsu-work/${{ env.artifact }}.tar.zst
           fi
@@ -313,6 +314,7 @@ jobs:
           path: |
             katsu/katsu-work/*.tar.zst
             katsu/katsu-work/*.tar.gz
+            katsu/katsu-work/*.wsl
           compression-level: 0
 
   #### LIVE ISO PUSH ####
