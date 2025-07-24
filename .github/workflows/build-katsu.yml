@@ -261,7 +261,7 @@ jobs:
           - x86_64
           - aarch64
         variant:
-          - wsl/wsl
+          # - wsl/wsl
     runs-on: ${{ matrix.arch == 'x86_64' && 'ubuntu-latest' || 'ubuntu-22.04-arm' }}
     container:
       image: ghcr.io/terrapkg/builder:f41
