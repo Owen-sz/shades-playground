@@ -1,10 +1,10 @@
 builder: dnf
 
 import:
-  - ../base/base.yaml
-  - ../base/desktop.yaml
-  - ../live/live.yaml
-  - ../live/anaconda.yaml
+  - ../../base/base.yaml
+  - ../../base/desktop.yaml
+  - ../../live/live.yaml
+  - ../../live/anaconda.yaml
   - sway.yaml
 
 distro: Ultramarine Linux 42 (Sway Shade)
