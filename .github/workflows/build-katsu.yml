@@ -58,11 +58,12 @@ jobs:
           - x86_64
           - aarch64
         variant:
-          - base/base-disk
-          - flagship/base-disk
-          - gnome/base-disk
-          - plasma/base-disk
-          - xfce/base-disk
+          - shades/sway/sway-disk
+          # - base/base-disk
+          # - flagship/base-disk
+          # - gnome/base-disk
+          # - plasma/base-disk
+          # - xfce/base-disk
           # - ports/chromebook/x86_64/flagship
           # - ports/chromebook/x86_64/gnome
           # - ports/chromebook/x86_64/plasma
@@ -167,18 +168,19 @@ jobs:
           - x86_64
           - aarch64
         variant:
-          - flagship/flagship-live
-          - gnome/gnome-live
-          - plasma/plasma-live
-          - xfce/xfce-live
-          - ports/surface/flagship-live
-          - ports/surface/gnome-live
-          - ports/surface/plasma-live
-          - ports/surface/xfce-live
-          - flagship/flagship-live-anaconda
-          - gnome/gnome-live-anaconda
-          - plasma/plasma-live-anaconda
-          - xfce/xfce-live-anaconda
+          - shades/sway/sway-live
+          # - flagship/flagship-live
+          # - gnome/gnome-live
+          # - plasma/plasma-live
+          # - xfce/xfce-live
+          # - ports/surface/flagship-live
+          # - ports/surface/gnome-live
+          # - ports/surface/plasma-live
+          # - ports/surface/xfce-live
+          # - flagship/flagship-live-anaconda
+          # - gnome/gnome-live-anaconda
+          # - plasma/plasma-live-anaconda
+          # - xfce/xfce-live-anaconda
           # - ports/chromebook/x86_64/flagship
           # - ports/chromebook/x86_64/gnome
           # - ports/chromebook/x86_64/plasma
