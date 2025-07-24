@@ -2,9 +2,9 @@ builder: dnf
 distro: Ultramarine Linux 42 (Sway Shade)
 
 import:
-  - ../base/base.yaml
-  - ../base/base-disk.yaml
-  - ../base/desktop.yaml
+  - ../../base/base.yaml
+  - ../../base/base-disk.yaml
+  - ../../base/desktop.yaml
   - sway.yaml
   - sway-disk.yaml
 
