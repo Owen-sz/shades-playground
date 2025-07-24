@@ -1,0 +1,3 @@
+dnf:
+  releasever: 42
+  exec: dnf5

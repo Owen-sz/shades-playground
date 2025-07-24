@@ -1,0 +1,17 @@
+dnf:
+  releasever: 42
+  exec: dnf5
+  packages:
+    - "@sway-desktop-environment"
+    # - ultramarine-release-sway
+    # - ultramarine-release-identity-sway
+  exclude:
+    - ibus
+    - ibus-mozc
+    - ibus-anthy
+    - ibus-qt
+    - ibus-m17n
+    - ibus-hangul
+    - ibus-libpinyin
+    - ibus-typing-booster
+    - anthy
