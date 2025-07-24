@@ -2,10 +2,9 @@ dnf:
   releasever: 42
   exec: dnf5
   packages:
-    #beta - still need to set up our own comps
-    - "@ultramarine-plasma-product-environment"
-    - ultramarine-release-plasma
-    - ultramarine-release-identity-plasma
+    - "@sway-desktop-environment"
+    # - ultramarine-release-sway
+    # - ultramarine-release-identity-sway
   exclude:
     - ibus
     - ibus-mozc
@@ -15,5 +14,4 @@ dnf:
     - ibus-hangul
     - ibus-libpinyin
     - ibus-typing-booster
-    # idk why this is pulled in
     - anthy

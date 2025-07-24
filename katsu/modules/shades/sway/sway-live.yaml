@@ -1,0 +1,29 @@
+builder: dnf
+
+import:
+  - ../base/base.yaml
+  - ../live/live.yaml
+  - ../base/desktop.yaml
+  - ../live/readymade.yaml
+  - sway.yaml
+
+distro: Ultramarine Linux 42 (Sway Shade)
+
+out_file: ultramarine-shade-sway-42-live.iso
+
+# scripts:
+#   post:
+#     - id: plasma-live
+#       name: Set up Sway Live
+#       file: ./sway-live.sh
+
+bootloader: grub
+
+kernel_cmdline: "quiet rhgb"
+
+iso:
+  volume_id: UM-sway-Live
+
+dnf:
+  releasever: 42
+  exec: dnf5

@@ -1,18 +1,12 @@
 builder: dnf
-distro: Ultramarine Linux 42 (GNOME Edition)
-
-# users:
-#   - username: ultramarine
-#     # plaintext password: ultramarine
-#     password: "$y$j9T$6/DebcxXazPrtBYnNXtEM.$yaUJHww5Mo1L8xNJ9IDJ.bvKOrIJxAG9PGQKWioBMx3"
-#     groups:
-#       - wheel
+distro: Ultramarine Linux 42 (Sway Shade)
 
 import:
   - ../base/base.yaml
   - ../base/base-disk.yaml
   - ../base/desktop.yaml
-  - gnome.yaml
+  - sway.yaml
+  - sway-disk.yaml
 
 scripts:
   post:

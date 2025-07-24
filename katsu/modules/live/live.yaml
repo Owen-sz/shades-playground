@@ -4,7 +4,7 @@ scripts:
       name: Set up Live Image
       file: live.sh
 dnf:
-  releasever: 41
+  releasever: 42
   exec: dnf4
   exclude:
     - fedora-release*
@@ -42,3 +42,8 @@ dnf:
     # for drivers and other stuff
     - kernel
     - kernel-devel-matched
+    # UMSS
+    - um
+    - dive
+    - mkfstab
+    - dracut-strip-trigger
