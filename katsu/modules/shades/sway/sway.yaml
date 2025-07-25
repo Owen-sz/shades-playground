@@ -3,6 +3,9 @@ dnf:
   exec: dnf5
   packages:
     - "@sway-desktop-environment"
+    - sddm
+    - gparted
+    - kitty
     # - ultramarine-release-sway
     # - ultramarine-release-identity-sway
   exclude:
@@ -15,3 +18,14 @@ dnf:
     - ibus-libpinyin
     - ibus-typing-booster
     - anthy
+    - ptyxis
+    # gnome is pulled in lol?
+    - gnome-shell
+    - gnome-core
+    - gnome-session
+    - gnome-control-center
+    - gdm
+    # exclude random stuff @sway-desktop-environment pulls in
+    - virtualbox-guest-additions
+    - gnome-disk-utility
+    - foot
