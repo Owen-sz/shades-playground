@@ -11,11 +11,14 @@ distro: Ultramarine Linux 42 (Sway Shade)
 
 out_file: ultramarine-shade-sway-42-live.iso
 
-# scripts:
-#   post:
-#     - id: plasma-live
-#       name: Set up Sway Live
-#       file: ./sway-live.sh
+scripts:
+  post:
+    - id: sway-live
+      name: Set up Sway Live
+      file: ./sway-live.sh
+    - id: sway-sddm
+      name: Set up Sway SDDM
+      file: ./sway-sddm.sh
 
 bootloader: grub
 

@@ -1,3 +1,9 @@
 dnf:
   releasever: 42
   exec: dnf5
+
+scripts:
+  post:
+    - id: sway-sddm
+      name: Set up Sway SDDM
+      file: ./sway-sddm.sh
