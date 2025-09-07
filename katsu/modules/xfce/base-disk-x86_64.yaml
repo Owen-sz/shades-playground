@@ -18,7 +18,7 @@ scripts:
   post:
     - id: grub
       name: Set up GRUB
-      file: ../base/grub-setup.sh
+      file: ../../base/grub-setup.sh
 
 disk:
   size: 16GB
