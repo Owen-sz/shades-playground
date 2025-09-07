@@ -26,7 +26,10 @@ dnf:
     - ptyxis
     - wmenu
     # gnome is pulled in lol?
-    - gnome-*
+    - gnome-shell
+    - gnome-core
+    - gnome-session
+    - gnome-control-center
     - gdm
     # exclude random stuff @sway-desktop-environment pulls in
     - virtualbox-guest-additions
