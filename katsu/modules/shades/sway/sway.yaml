@@ -6,6 +6,8 @@ dnf:
     - sddm
     - gparted
     - kitty
+    - rofi-wayland # this might be pre-installed already with gnome or cinnamon pkgs
+    - topgrade # do menu bar upgrade thing?
     # - ultramarine-release-sway
     # - ultramarine-release-identity-sway
   exclude:
@@ -19,6 +21,7 @@ dnf:
     - ibus-typing-booster
     - anthy
     - ptyxis
+    - wmenu
     # gnome is pulled in lol?
     - gnome-*
     - gdm
