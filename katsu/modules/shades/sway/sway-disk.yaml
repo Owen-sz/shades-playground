@@ -7,3 +7,6 @@ scripts:
     - id: sway-sddm
       name: Set up Sway SDDM
       file: ./sway-sddm.sh
+    - id: sway setup
+      name: Set up sway files
+      file: ./sway-setup.sh
