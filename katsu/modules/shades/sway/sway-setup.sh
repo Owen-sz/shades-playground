@@ -2,4 +2,4 @@
 
 dnf remove gnome-* cinnamon-* -y
 
-mv ./config /etc/sway/config
+mv config /etc/sway/config
