@@ -13,9 +13,9 @@ out_file: ultramarine-shade-sway-42-live-anaconda.iso
 
 scripts:
   post:
-    # - id: sway-live
-    #   name: Set up Sway Live
-    #   file: ./sway-live.sh
+    - id: sway-live
+      name: Set up Sway Live
+      file: ./sway-live.sh
     - id: sway-live-anaconda
       name: Set up Anaconda
       file: ./sway-live-anaconda.sh
