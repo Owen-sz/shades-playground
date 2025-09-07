@@ -2,4 +2,11 @@
 
 dnf remove gnome-* cinnamon-* -y
 
-mv config /etc/sway/config
+CONFIG_FILE="config"
+DEST_DIR="/etc/sway/config"
+cp "$CONFIG_FILE" "$DEST_DIR"
+# cp config /etc/sway/config
+
+#
+# /etc/xdg/waybar/config.jsonc
+# /etc/xdg/waybar/style.css

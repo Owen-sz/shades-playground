@@ -30,3 +30,4 @@ Things u need to config:
 - Include nmtui
 - get rid of cinnamon config files
 - font awesome 7 gliph copy is useful for waybar and rofi ricing (maybe see if including font awesome 7 pro is okay even if its normally paid cuz um is funny like that)
+- change meta+shift+q bidn for closing window in sway config to meta+ q

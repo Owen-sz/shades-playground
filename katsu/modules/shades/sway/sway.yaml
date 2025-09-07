@@ -3,14 +3,15 @@ dnf:
   exec: dnf5
   packages:
     - "@sway-desktop-environment"
+    - "@ultramarine-product-common"
+    - "@ultramarine-desktop-product-common"
     - sddm
     - gparted
     - kitty
     - rofi-wayland # this might be pre-installed already with gnome or cinnamon pkgs
-    - git
     - topgrade # do menu bar upgrade thing?
-    - NetworkManager-tui
     - ultramarine-backgrounds-compat
+    - ultramarine-shell-config
     # - ultramarine-release-sway
     # - ultramarine-release-identity-sway
   exclude:
