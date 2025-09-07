@@ -8,6 +8,7 @@ dnf:
     - kitty
     - rofi-wayland # this might be pre-installed already with gnome or cinnamon pkgs
     - topgrade # do menu bar upgrade thing?
+    - NetworkManager-tui
     - ultramarine-backgrounds-compat
     # - ultramarine-release-sway
     # - ultramarine-release-identity-sway
