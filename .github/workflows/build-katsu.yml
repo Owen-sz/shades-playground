@@ -58,7 +58,7 @@ jobs:
           - x86_64
           - aarch64
         variant:
-          - shades/sway/sway-disk
+          - shades/sway/base-disk
           # - base/base-disk
           # - flagship/base-disk
           # - gnome/base-disk
