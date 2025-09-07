@@ -12,8 +12,8 @@ import:
   - ../../base/base.yaml
   - ../../base/base-disk.yaml
   - ../../base/desktop.yaml
-  - plasma.yaml
-  - plasma-disk.yaml
+  - sway.yaml
+  - sway-disk.yaml
 
 scripts:
   post:
