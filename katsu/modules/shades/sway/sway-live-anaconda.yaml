@@ -7,11 +7,6 @@ import:
   - ../../live/anaconda.yaml
   - sway.yaml
 
-Scripts:
-  - id: sway setup
-    name: Set up sway files
-    file: ./sway-setup.sh
-
 distro: Ultramarine Linux 42 (Sway Shade)
 
 out_file: ultramarine-shade-sway-42-live-anaconda.iso
@@ -27,9 +22,9 @@ scripts:
     - id: sway-sddm
       name: Set up Sway SDDM
       file: ./sway-sddm.sh
-    # - id: sway setup
-    #   name: Set up sway files
-    #   file: ./sway-setup.sh
+    - id: sway setup
+      name: Set up sway files
+      file: ./sway-setup.sh
 
 bootloader: grub
 
