@@ -1,16 +1,13 @@
 #!/bin/bash -x
 
 dnf remove gnome-* cinnamon-* -y
-
-# make directory for screenshots to end up in
-mkdir ~/Pictures/screenshots/
-
+ls -la
 # Sway
-cp katsu/modules/shades/sway/config /etc/sway/config
+cp katsu/modules/shades/sway/default-configs/sway-config /etc/sway/config
 
 # Waybar
-cp katsu/modules/shades/sway/config.jsonc /etc/xdg/waybar/
-cp katsu/modules/shades/sway/style.css /etc/xdg/waybar/
+cp katsu/modules/shades/sway/default-configs/waybar-config.jsonc /etc/xdg/waybar/config.jsonc
+cp katsu/modules/shades/sway/default-configs/waybar-style.css /etc/xdg/waybar/style.css
 
 # Rofi
-cp katsu/modules/shades/sway/config.rasi ~/.config/rofi/
+cp katsu/modules/shades/sway/default-configs/rofi-config.rasi ~/.config/rofi/config.rasi
