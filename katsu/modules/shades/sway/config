@@ -20,7 +20,7 @@ set $dmenu rofi -show drun -show-icons
 set $menu rofi -show run
 
 # take a screenshot of selected area, save to ~/Media and copy to clipboard in the background
-bindsym $mod+Shift+s exec slurp | grim -g - - | tee ~/Media/screenshot_$(date +'%m-%d-%y_%H:%M:%S').png | wl-copy
+bindsym $mod+Shift+s exec slurp | grim -g - - | tee ~/screenshot_$(date +'%m-%d-%y_%H:%M:%S').png | wl-copy
 
 # hide window titles while keeping a tiny tiny window border
 default_border pixel 1
