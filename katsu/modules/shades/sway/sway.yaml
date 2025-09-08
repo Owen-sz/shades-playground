@@ -12,6 +12,7 @@ dnf:
     - topgrade # do menu bar upgrade thing?
     - ultramarine-backgrounds-compat
     - ultramarine-shell-config
+    - wlcopy
     # - ultramarine-release-sway
     # - ultramarine-release-identity-sway
   exclude:
