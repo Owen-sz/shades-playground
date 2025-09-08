@@ -19,6 +19,8 @@
 - tailwind css is useful?
 - umcli thing that tells u all your keybinds (mostly found in sway config i think)
 - fix the issue with fedora sway inside gnome boxes being too small. its a hidpi issue. maybe solved with something alogn the lines of spice-display or qemu-ui-spice-app and qemu-ui-spice-core?
+- useful for waybar inspo https://github.com/Alexays/Waybar/wiki/Examples
+
 
 Things u need to config:
 - waybar
@@ -27,8 +29,28 @@ Things u need to config:
 - swayidle if you wanna make it customish
 - rofi and all the other scripts (ties in with waybar)
 - greeter (wallpaper will not be the same as swaybg, youll have to configure it manually)
+
 - Include nmtui
 - get rid of cinnamon config files
 - font awesome 7 gliph copy is useful for waybar and rofi ricing (maybe see if including font awesome 7 pro is okay even if its normally paid cuz um is funny like that)
 - change meta+shift+q bidn for closing window in sway config to meta+ q
 - move all config files to release package
+- get multitouch support for trackpads and not just simulate the 3 buttons at the bottom of the trackpads
+
+
+
+Fix file ownership issues in zed when editing the configs while developing them by running these commands:
+- sudo chown -R user:group [config directory or file you need to be able to edit with zed]
+i.e.  sudo chown -R j:wheel /etc/xdg/waybar or sudo chown -R j:wheel /etc/sway/
+
+Where configs are:
+Sway:
+/etc/sway/config
+Waybar:
+/etc/xdg/waybar/config.jsonc
+/etc/xdg/waybar/style.css
+Rofi:
+/etc/rofi.conf (system-wide config)
+/usr/share/rofi/themes/ (where theme css? files themselves are stored)
+~/.config/rofi/rofi.rasi (themeing config (points to a theme file in usr/share/rofi/themes/, put scripts in this dir probably)
+theres also a themes folder somewhere
