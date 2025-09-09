@@ -11,6 +11,7 @@ dnf remove gnome-* cinnamon-* -y
 
 # # Rofi
 # cp katsu/modules/shades/sway/default-configs/rofi-config.rasi ~/.config/rofi/config.rasi
+# will need to cp over any custom themes to /usr/share/rofi/themes/
 
 
 # I will figure out how to do this later
