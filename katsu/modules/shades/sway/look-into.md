@@ -29,6 +29,7 @@
 - use for font-variant-numeric: tabular-nums; css waybar clock if possible  https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric
 - gparted pulls in all of gnome
 - add dual battery support to waybar (for surface)
+- put any scripts that use rofi in the rofi dir (e.g. rofi-shutdown-script.sh)
 
 
 Things u need to config:
