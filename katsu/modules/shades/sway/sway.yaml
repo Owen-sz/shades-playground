@@ -13,7 +13,7 @@ dnf:
     - ultramarine-shell-config
     - wl-clipboard
     - fontawesome-6-free-fonts
-    - fontawesome-6-brand-fonts
+    - fontawesome-6-brands-fonts
     - rsms-inter-fonts
     # - ultramarine-release-sway
     # - ultramarine-release-identity-sway
