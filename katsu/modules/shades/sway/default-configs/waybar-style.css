@@ -2,8 +2,8 @@
 
 * {
     border: none;
-    font-family: "Noto Sans";
-    font-size: 14px;
+    font-family: "Inter", "Font Awesome 6 Free";
+    font-size: 16px;
     min-height: 8px;
 }
 
@@ -34,7 +34,7 @@ window#waybar.hidden {
 
 #tags button {
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
     font-size: 16px;
     border-radius: 2px;
@@ -42,13 +42,13 @@ window#waybar.hidden {
 
 #tags button.occupied {
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
     font-size: 4px;
 }
 
 #tags button.focused {
-    color: @text;
+    color: @test;
 }
 
 #tags button:hover {
@@ -67,12 +67,11 @@ window#waybar.hidden {
 #workspaces button {
     padding: 0 8px;
     background-color: transparent;
-    color: @text;
+    color: @test;
 }
 
 #workspaces button:hover {
-    /*background: rgba(0, 0, 0, 0.2);*/
-    color: @lavender;
+    color: #e8a2af;
 }
 
 #workspaces button.focused {
@@ -105,7 +104,7 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
 }
 
@@ -116,7 +115,7 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
 }
 
@@ -127,13 +126,13 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
 }
 
 #battery.charging,
 #battery.plugged {
-    color: @text;
+    color: @green;
     background-color: transparent;
 }
 
@@ -150,7 +149,7 @@ window#waybar.hidden {
 @keyframes blink {
     to {
         background-color: transparent;
-        color: @text;
+        color: @test;
     }
 }
 
@@ -161,7 +160,7 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
 }
 
@@ -172,7 +171,7 @@ window#waybar.hidden {
     margin-bottom: 0px;
     padding-right: 8px;
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
 }
 
@@ -183,7 +182,7 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
 }
 
@@ -194,7 +193,7 @@ window#waybar.hidden {
     margin-bottom: 0px;
     padding-right: 8px;
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
 }
 #cpu {
@@ -204,7 +203,7 @@ window#waybar.hidden {
     margin-bottom: 0px;
     padding-right: 8px;
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
 }
 
@@ -215,19 +214,18 @@ window#waybar.hidden {
     margin-bottom: 0px;
     padding-right: 8px;
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
 }
 
 #custom-power {
-    /*font-size: 12px;*/
     margin-top: 0px;
     margin-left: 0px;
     padding-left: 8px;
     margin-bottom: 0px;
     padding-right: 8px;
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
 }
 
@@ -238,7 +236,7 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
 }
 
@@ -249,6 +247,6 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @text;
+    color: @test;
     background: transparent;
 }

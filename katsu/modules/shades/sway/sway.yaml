@@ -6,13 +6,15 @@ dnf:
     - "@ultramarine-product-common"
     - "@ultramarine-desktop-product-common"
     - sddm
-    - gparted
+    # - gparted      nope this brings in all of gnome lmfao
     - kitty
     - rofi-wayland # this might be pre-installed already with gnome or cinnamon pkgs
     - topgrade # do menu bar upgrade thing?
     - ultramarine-backgrounds-compat
     - ultramarine-shell-config
     - wl-clipboard
+    - fontawesome-6-*
+    - rms-inter-fonts
     # - ultramarine-release-sway
     # - ultramarine-release-identity-sway
   exclude:
@@ -27,13 +29,13 @@ dnf:
     - anthy
     - ptyxis
     - wmenu
-    # gnome is pulled in lol?
-    - gnome-shell
-    - gnome-core
-    - gnome-session
-    - gnome-control-center
-    - gdm
+    # gnome is pulled in lol? (its because gparted was being pulled in)
+    #- gnome-shell
+    #- gnome-core
+    #- gnome-session
+    #- gnome-control-center
+    #- gdm
     # exclude random stuff @sway-desktop-environment pulls in
     - virtualbox-guest-additions
-    - gnome-disk-utility
+    - gnome-disk-utility # mightve also been causing gnome to get pulled in
     - foot

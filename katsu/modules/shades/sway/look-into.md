@@ -6,7 +6,7 @@
 - rofi bluetooth/network menu
 - dynamically hide waybar icons?
 - waybar update module with topgrade?
-- blue transparency all over cuz water
+- blue transparency + ui elements (like the waybar clock or calendar) inside bubbles all over cuz water
 - prioritize being fast
 - some sort of way to centralize all your configs easily and BE ABLE TO ADD THEM MANUALLY TOO. so like look in the docsof the random ass package u just installed to find where the config is and add it manually. base on umcli?
 - get rid of all the bs packages like the perl shit?? where does perl even come from? is it from UM? is it needed?
@@ -26,28 +26,43 @@
 - change meta+shift+q bidn for closing window in sway config to meta+ q
 - move all config files to release package
 - get multitouch support for trackpads and not just simulate the 3 buttons at the bottom of the trackpads
+- use for font-variant-numeric: tabular-nums; css waybar clock if possible  https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric
+- gparted pulls in all of gnome
+- add dual battery support to waybar (for surface)
 
 
 Things u need to config:
 - waybar
-- swaylock
+- swaylock (might be more like systemd config stuff)
 - sway
-- swaybg
-- swayidle if you wanna make it customish
-- rofi and all the other scripts (ties in with waybar)
-- greeter (wallpaper will not be the same as swaybg, youll have to configure it manually)
+- swaybg (in sway config, just needs um wallpaper integration)
+- swayidle (also in sway config i think, maybe systemd too)
+- rofi and all the other scripts (ties in with waybar/keybinds in sway)
+- greeter (wallpaper will not be the same as swaybg by default, youll have to configure it seperately)
+- remove fedora firefox bookmark files with the setup script?
+- kitty
 
 Fix file ownership issues in zed when editing the configs while developing them by running these commands:
 - sudo chown -R user:group [config directory or file you need to be able to edit with zed]
 i.e.  sudo chown -R j:wheel /etc/xdg/waybar or sudo chown -R j:wheel /etc/sway/
 
 Where configs are:
+
 Sway:
 /etc/sway/config
+
 Waybar:
 /etc/xdg/waybar/config.jsonc
 /etc/xdg/waybar/style.css
+
 Rofi:
 /usr/share/rofi/themes/ (where theme css? files themselves are stored)
 ~/.config/rofi/rofi.rasi (themeing config (points to a theme file in usr/share/rofi/themes/, put scripts in this dir probably)
 theres also a themes folder somewhere
+
+NetworkManager (might need this config for rofi script stuff idk):
+/etc/NetworkManager/NetworkManager.conf  Config file location
+/etc/NetworkManager/conf.d  Config directory location
+
+Kitty:
+~/.config/kitty/kitty.conf
