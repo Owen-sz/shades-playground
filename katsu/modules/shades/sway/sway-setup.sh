@@ -1,6 +1,5 @@
 #!/bin/bash -x
 
-dnf remove cinnamon-* -y
 # ls -la
 # # Sway
 # cp katsu/modules/shades/sway/default-configs/sway-config /etc/sway/config
