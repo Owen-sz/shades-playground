@@ -34,7 +34,7 @@ window#waybar.hidden {
 
 #tags button {
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
     font-size: 16px;
     border-radius: 2px;
@@ -42,13 +42,13 @@ window#waybar.hidden {
 
 #tags button.occupied {
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
     font-size: 4px;
 }
 
 #tags button.focused {
-    color: @test;
+    color: @text;
 }
 
 #tags button:hover {
@@ -67,7 +67,7 @@ window#waybar.hidden {
 #workspaces button {
     padding: 0 8px;
     background-color: transparent;
-    color: @test;
+    color: @text;
 }
 
 #workspaces button:hover {
@@ -104,7 +104,7 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
 }
 
@@ -115,7 +115,7 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
 }
 
@@ -126,7 +126,7 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
 }
 
@@ -149,7 +149,7 @@ window#waybar.hidden {
 @keyframes blink {
     to {
         background-color: transparent;
-        color: @test;
+        color: @text;
     }
 }
 
@@ -160,7 +160,7 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
 }
 
@@ -171,7 +171,7 @@ window#waybar.hidden {
     margin-bottom: 0px;
     padding-right: 8px;
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
 }
 
@@ -182,7 +182,7 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
 }
 
@@ -193,7 +193,7 @@ window#waybar.hidden {
     margin-bottom: 0px;
     padding-right: 8px;
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
 }
 #cpu {
@@ -203,7 +203,7 @@ window#waybar.hidden {
     margin-bottom: 0px;
     padding-right: 8px;
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
 }
 
@@ -214,7 +214,7 @@ window#waybar.hidden {
     margin-bottom: 0px;
     padding-right: 8px;
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
 }
 
@@ -225,7 +225,7 @@ window#waybar.hidden {
     margin-bottom: 0px;
     padding-right: 8px;
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
 }
 
@@ -236,7 +236,7 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
 }
 
@@ -247,6 +247,6 @@ window#waybar.hidden {
     padding-right: 8px;
     margin-bottom: 0px;
     transition: none;
-    color: @test;
+    color: @text;
     background: transparent;
 }
