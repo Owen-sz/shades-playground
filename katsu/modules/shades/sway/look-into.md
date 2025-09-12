@@ -41,7 +41,8 @@ Things u need to config:
 - rofi and all the other scripts (ties in with waybar/keybinds in sway)
 - greeter (wallpaper will not be the same as swaybg by default, youll have to configure it seperately)
 - remove fedora firefox bookmark files with the setup script?
-- kitty
+- configure kitty
+- add dual battery support for thinkpads into waybar
 
 Fix file ownership issues in zed when editing the configs while developing them by running these commands:
 - sudo chown -R user:group [config directory or file you need to be able to edit with zed]
