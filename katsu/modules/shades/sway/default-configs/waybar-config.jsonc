@@ -82,6 +82,7 @@
     "format": "{icon}  {capacity}%",
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
+    // "format-alt": "{time} {icon}",
     "format-icons": ["", "", "", "", ""],
   },
 
@@ -126,14 +127,11 @@
 
   "custom/updates": {
     //"tooltip": true,
-    "format": " {}",
+    "format": " {}",
     "tooltip-format": "click to update!",
-    "exec": "dnf -qy check-update | grep -Ec update",
-    "exec-if": "[[ $(dnf -qy check-update | grep -Ec update) = 0 ]]",
-    "interval": 15,
+    "exec": "dnf -qy check-update | awk '/^Obsoleting packages$/ {exit} NF' | wc -l",
+    "exec-if": "[[ $(dnf -qy check-update | awk '/^Obsoleting packages$/ {exit} NF' | wc -l) != 0 ]]",
+    // "interval": 15,
     "on-click": "kitty topgrade",
   },
 }
-
-//"exec": "checkupdates | wc -l",
-//"exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",

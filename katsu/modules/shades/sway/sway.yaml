@@ -28,7 +28,7 @@ dnf:
     - ibus-typing-booster
     - anthy
     - ptyxis
-    - wmenu
+    # - wmenu
     # exclude random stuff @sway-desktop-environment pulls in
     - virtualbox-guest-additions
     - gnome-disk-utility # mightve also been causing gnome to get pulled in
