@@ -2,17 +2,12 @@
    use Meta+. to open
 - rofi-wayland as a file explorer?
 - rofi clipboard history
-- rofi shutdown menu
 - rofi bluetooth/network menu
 - dynamically hide waybar icons?
-- waybar update module with topgrade?
 - blue transparency + ui elements (like the waybar clock or calendar) inside bubbles all over cuz water
 - prioritize being fast
 - some sort of way to centralize all your configs easily and BE ABLE TO ADD THEM MANUALLY TOO. so like look in the docsof the random ass package u just installed to find where the config is and add it manually. base on umcli?
-- get rid of all the bs packages like the perl shit?? where does perl even come from? is it from UM? is it needed?
-- sddm fucky, lightdm pulls in cinnamon and doesnt like sway it says xdg_runtime_dir is not set in the enviornment??
 - figure out why fedora sway doesnt pull in seatd? wtf is up with seatd
-- fix migration script to include
 - wrap swaybg in umcli
 - fedora sway uses swaybg which has its images in usr/share/backgrounds/ and has its config (what image sway is using) in the sway config (etc/sway/config)
 - lea has that css website for os ui little snippets
@@ -20,17 +15,23 @@
 - umcli thing that tells u all your keybinds (mostly found in sway config i think)
 - fix the issue with fedora sway inside gnome boxes being too small. its a hidpi issue. maybe solved with something alogn the lines of spice-display or qemu-ui-spice-app and qemu-ui-spice-core?
 - useful for waybar inspo https://github.com/Alexays/Waybar/wiki/Examples
-- Include nmtui
-- get rid of cinnamon config files
 - font awesome 7 gliph copy is useful for waybar and rofi ricing (maybe see if including font awesome 7 pro is okay even if its normally paid cuz um is funny like that)
-- change meta+shift+q bidn for closing window in sway config to meta+ q
 - move all config files to release package
 - get multitouch support for trackpads and not just simulate the 3 buttons at the bottom of the trackpads
 - use for font-variant-numeric: tabular-nums; css waybar clock if possible  https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric
-- gparted pulls in all of gnome
+- gparted pulls in all of gnome, find different disk util or somehow get gparted without gnome apps
 - add dual battery support to waybar (for surface)
 - put any scripts that use rofi in the rofi dir (e.g. rofi-shutdown-script.sh)
+-
 
+Completed Items:
+- change meta+shift+q bidn for closing window in sway config to meta+ q
+- Include nmtui
+- get rid of cinnamon config files
+- rofi shutdown menu
+- waybar update module with topgrade
+- get rid of all the bs packages like the perl shit?? where does perl even come from? is it from UM? is it needed?
+- sddm fucky, lightdm pulls in cinnamon and doesnt like sway it says xdg_runtime_dir is not set in the enviornment??
 
 Things u need to config:
 - waybar
