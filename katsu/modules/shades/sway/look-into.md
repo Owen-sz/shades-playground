@@ -22,7 +22,7 @@
 - gparted pulls in all of gnome, find different disk util or somehow get gparted without gnome apps
 - add dual battery support to waybar (for surface)
 - put any scripts that use rofi in the rofi dir (e.g. rofi-shutdown-script.sh)
--
+- get the tuned switcher waybar module from the fedora sway config, add it. the underlying functionality is all still there its prettymuch a copy+paste
 
 Completed Items:
 - change meta+shift+q bidn for closing window in sway config to meta+ q
