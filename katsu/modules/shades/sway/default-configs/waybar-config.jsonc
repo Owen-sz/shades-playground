@@ -6,6 +6,7 @@
     "custom/updates",
     "backlight",
     "pulseaudio",
+    "bluetooth",
     "network",
     "clock",
     "battery",
@@ -28,8 +29,8 @@
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
     "format": "{format_source} {icon} {volume}%",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
+    //"format-bluetooth": "{volume}% {icon} {format_source}",
+    //"format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": "{format_source} ",
     "format-source": "",
     "format-source-muted": " ",
@@ -61,7 +62,7 @@
     "tooltip-format": "  {ifname} via {gwaddr}",
     "format-linked": "  {ifname} (No IP)",
     "format-disconnected": "⚠ Disconnected",
-    "format-alt": "{essid} | {ifname}: {ipaddr}/{cidr}",
+    "format-alt": "  {essid} | {ifname}: {ipaddr}/{cidr}",
   },
 
   "backlight": {
@@ -129,8 +130,21 @@
     //"tooltip": true,
     "format": " {}",
     "tooltip-format": "click to update!",
-    "exec-if": "[[ $(dnf -qy check-update --no-best | awk '/^Obsoleting packages$/ {exit} NF' | wc -l) =! 0 ]]",
+    "exec": "dnf -qy check-update | awk '/^Obsoleting packages$/ {exit} NF' | wc -l",
+    "exec-if": "[[ $(dnf -qy check-update | awk '/^Obsoleting packages$/ {exit} NF' | wc -l) != 0 ]]",
     "interval": "once",
     "on-click": "kitty topgrade -k",
+
+    "bluetooth": {
+      // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+      "format": "test",
+      "format-disabled": "", // an empty format will hide the module
+      "format-connected": "{num_connections} connected",
+      "tooltip-format": "{controller_alias}\t{controller_address}",
+      "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+      //"on-click": "notify-send 'Bluetooth clicked'",
+      "on-click": "bash -c ~/.config/rofi/rofi-bluetooth",
+    },
   },
 }

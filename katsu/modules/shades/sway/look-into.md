@@ -23,6 +23,7 @@
 - add dual battery support to waybar (for surface)
 - put any scripts that use rofi in the rofi dir (e.g. rofi-shutdown-script.sh)
 - get the tuned switcher waybar module from the fedora sway config, add it. the underlying functionality is all still there its prettymuch a copy+paste
+- make battery icon in waybar green if battery is 100%, wether charging or not
 
 Completed Items:
 - change meta+shift+q bidn for closing window in sway config to meta+ q
