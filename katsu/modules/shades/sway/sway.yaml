@@ -15,6 +15,7 @@ dnf:
     - fontawesome-6-free-fonts
     - fontawesome-6-brands-fonts
     - rsms-inter-fonts
+    - pavucontrol # for audio waybar module
     # - ultramarine-release-sway
     # - ultramarine-release-identity-sway
   exclude:

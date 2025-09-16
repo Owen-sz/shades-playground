@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ##      @import "name-of-rofi-theme-set-in-config"
 
