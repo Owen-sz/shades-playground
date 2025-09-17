@@ -1,12 +1,17 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 ##      @import "name-of-rofi-theme-set-in-config"
+##
+##      window {
+##          width: 500;
+##      }
 
-action=$(printf "Log out\nShut Down\nReboot\nCancel" | rofi -dmenu -l 4)
+action=$(printf " Log Out\n Shut Down\n Reboot\n Cancel" | rofi -dmenu -l 4)
 
-if [[ $action == "Log out" ]]; then
-    confirm=$(printf "Yes\nNo" | rofi -dmenu -l 2 -mesg "Are you sure you want to log out?")
+if [[ $action == " Log Out" ]]; then
+    confirm=$(printf " Yes\n No" | rofi -dmenu -l 2 -mesg "Are you sure you want to log out?")
     if [[ $confirm == "Yes" ]]; then
+        ## might be better to have the intended log out commands for respective wm
         if [[ $DESKTOP_SESSION == "sway" ]]; then
             swaymsg exit
         fi
@@ -14,16 +19,16 @@ if [[ $action == "Log out" ]]; then
         exit
     fi
 
-elif [[ $action == "Shut Down" ]]; then
-    confirm=$(printf "Yes\nNo" | rofi -dmenu -l 2 -mesg "Are you sure you want to shut down?")
+elif [[ $action == " Shut Down" ]]; then
+    confirm=$(printf " Yes\n No" | rofi -dmenu -l 2 -mesg "Are you sure you want to shut down?")
     if [[ $confirm == "Yes" ]]; then
-        systemctl shutdown -r now 'User Shutdown Action'
+        systemctl poweroff
     else
         exit
     fi
 
-elif [[ $action == "Reboot" ]]; then
-    confirm=$(printf "Yes\nNo" | rofi -dmenu -l 2 -mesg "Are you sure you want to reboot?")
+elif [[ $action == " Reboot" ]]; then
+    confirm=$(printf " Yes\n No" | rofi -dmenu -l 2 -mesg "Are you sure you want to reboot?")
     if [[ $confirm == "Yes" ]]; then
         systemctl reboot --now
     else
