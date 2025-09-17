@@ -35,4 +35,4 @@ iso:
 
 dnf:
   releasever: 42
-  exec: dnf5
+  exec: dnf
