@@ -24,6 +24,10 @@
 - put any scripts that use rofi in the rofi dir (e.g. rofi-shutdown-script.sh)
 - get the tuned switcher waybar module from the fedora sway config, add it. the underlying functionality is all still there its prettymuch a copy+paste
 - make battery icon in waybar green if battery is 100%, wether charging or not
+- you can run `kitty themes` to change kitty theme from their default selection.
+- get the custom/media module working in waybar
+- make temp module in waybar yellow/red if it gets too hot. same with cpu/mem?
+- get better battery icon for charging. maybe a way to get font awesome 7 pro stuff in? (even tho its paid but theres a free thing on the aur)
 
 Completed Items:
 - change meta+shift+q bidn for closing window in sway config to meta+ q
