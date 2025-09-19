@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#
+# This code is under the GPLv3 license
 
 # Constants
 divider="---------"

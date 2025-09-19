@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#
+# This code is under the GPLv3 license
 
 choice=$(printf " Logout\n Shutdown\n Reboot\n Suspend\n Cancel" | rofi -dmenu -l 5)
 elif [[ $choice == " Logout" ]];then
