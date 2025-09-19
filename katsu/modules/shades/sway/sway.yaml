@@ -6,13 +6,16 @@ dnf:
     - "@ultramarine-product-common"
     - "@ultramarine-desktop-product-common"
     - sddm
-    - gparted
     - kitty
     - rofi-wayland # this might be pre-installed already with gnome or cinnamon pkgs
     - topgrade # do menu bar upgrade thing?
     - ultramarine-backgrounds-compat
     - ultramarine-shell-config
     - wl-clipboard
+    - fontawesome-6-free-fonts
+    - fontawesome-6-brands-fonts
+    - rsms-inter-fonts
+    - pavucontrol # for audio waybar module
     # - ultramarine-release-sway
     # - ultramarine-release-identity-sway
   exclude:
@@ -26,14 +29,8 @@ dnf:
     - ibus-typing-booster
     - anthy
     - ptyxis
-    - wmenu
-    # gnome is pulled in lol?
-    - gnome-shell
-    - gnome-core
-    - gnome-session
-    - gnome-control-center
-    - gdm
+    # - wmenu
     # exclude random stuff @sway-desktop-environment pulls in
     - virtualbox-guest-additions
-    - gnome-disk-utility
+    - gnome-disk-utility # mightve also been causing gnome to get pulled in
     - foot
