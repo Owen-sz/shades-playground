@@ -49,6 +49,7 @@ Things u need to config:
 - remove fedora firefox bookmark files with the setup script?
 - configure kitty
 - add dual battery support for thinkpads into waybar
+- waypaper (in terra now)
 
 Fix file ownership issues in zed when editing the configs while developing them by running these commands:
 - sudo chown -R user:group [config directory or file you need to be able to edit with zed]
